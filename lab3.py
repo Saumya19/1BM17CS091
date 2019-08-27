@@ -1,7 +1,7 @@
-n=int(input("enter a number"))
-lis=[]
-for i in range(1,n+1):
-    if n%i==0:
-        lis.append(i)
-
-print(lis)
+import random
+import string
+chars=string.printable
+n=int(input("enter the length of the password"))
+for i in range(n):
+    a=str("".join(random.sample(chars,n)))
+print(a)
